@@ -1,0 +1,216 @@
+.ctn-prueba {
+    .container {
+        .create {
+            margin-top: 41px;
+            text-align: right;
+            p {
+                margin: 0;
+                height: 24px;
+                //width: 88px;
+                color: #ffbe00;
+                font-size: 16px;
+                font-weight: 900;
+                letter-spacing: 0;
+                line-height: 21px;
+                text-align: right;
+                cursor: pointer;
+            }
+        }
+
+        .upcoming {
+            margin-top: 30px;
+            margin-bottom: 12px;
+            p {
+                min-width: 110px;
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 900;
+                letter-spacing: 0;
+                line-height: 26px;
+                text-align: center;
+                margin: 0;
+                text-align: left;
+                .cinco {
+                    color: #c1c7d0;
+                    font-size: 14px;
+                    font-weight: 300;
+                    letter-spacing: 0;
+                    line-height: 19px;
+                }
+            }
+        }
+
+        .statistics {
+            margin-top: 33px;
+            width: 100%;
+            margin-bottom: 13px;
+            .ctn-statistics {
+                display: inline-block;
+                vertical-align: middle;
+                width: 50%;
+                text-align: left;
+
+                .rectangle {
+                    box-sizing: border-box;
+                    min-height: 24px;
+                    width: 53px;
+                    border: 1px solid #1c232a;
+                    border-radius: 4px;
+                    background-color: #10161c;
+                    box-shadow: inset -2px -2px 4px 0 #040b11, inset 2px 2px 4px 0 #1c232a;
+
+                    .ctn {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 50%;
+                        cursor: pointer;
+                        .down {
+                            /* background-image: url(./../../../assets/icons/down.svg);
+                            background-image: url(./../../../assets/icons/down.svg); */
+
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            height: 6px;
+                            width: 100%;
+                            vertical-align: middle;
+                        }
+
+                        .download {
+                            /* background-image: url(./../../../assets/icons/downl.svg);
+                            background-image: url(./../../../assets/icons/downl.svg); */
+
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+                            height: 24px;
+                            width: 100%;
+                            vertical-align: middle;
+                        }
+                    }
+
+                    .ctn:nth-child(1) {
+                        border-right: 1px solid #3f4347;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                    min-height: 24px;
+                    min-width: 69px;
+                    color: #ffffff;
+                    font-family: Avenir;
+                    font-size: 16px;
+                    font-weight: 900;
+                    letter-spacing: 0;
+                    line-height: 26px;
+                }
+            }
+
+            .ctn-statistics:nth-child(2) {
+                text-align: -webkit-right;
+            }
+        }
+
+        .grafica {
+            margin-top: 40px;
+            box-sizing: border-box;
+            //min-height: 355px;
+
+            max-height: 555px;
+            //width: 326px;
+            border: 1px solid #10161c;
+            //transform: scaleY(-1);
+            border-radius: 16px;
+            background-color: #10161c;
+            box-shadow: inset 2px 2px 6px 0 #1c232a, inset -2px -2px 6px 0 #040b11;
+            margin-bottom: 71px;
+            canvas {
+                max-height: 555px !important;
+            }
+
+            .opciones {
+                margin-top: 31px;
+                .opcion {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 25%;
+                    text-align: center;
+                    p {
+                        margin: 0;
+
+                        /* height: 25px;
+                        width: 37px; */
+                        color: #ffffff;
+                        font-size: 18px;
+                        font-weight: 900;
+                        letter-spacing: 0;
+                        line-height: 25px;
+                        cursor: pointer;
+                    }
+                }
+
+                .active {
+                    border-bottom: 1px solid #ffbe00;
+                    p {
+                        color: #ffbe00;
+                    }
+                }
+            }
+
+            .price {
+                margin-top: 49px;
+                p {
+                    margin: 0;
+                    min-height: 61px;
+                    min-width: 149.5px;
+                    color: #ffffff;
+                    font-family: Avenir;
+                    font-size: 45px;
+                    font-weight: 900;
+                    letter-spacing: 0;
+                    line-height: 61px;
+                    text-align: center;
+
+                    span {
+                        color: #ffffff;
+                        //font-family: ".SF NS Display";
+                        font-size: 22px;
+                        letter-spacing: 0;
+                        line-height: 26px;
+                        vertical-align: super;
+                    }
+                }
+            }
+
+            .months {
+                width: 100%;
+                margin-bottom: 22px;
+                .month {
+                    display: inline-block;
+                    width: 16.6%;
+                    vertical-align: middle;
+                    p {
+                        margin: 0;
+                        text-align: center;
+
+                        min-height: 22px;
+                        min-width: 27px;
+                        color: #89898a;
+                        font-family: Avenir;
+                        font-size: 16px;
+                        font-weight: 900;
+                        letter-spacing: 0;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+
+        @media (min-width: 992px) {
+            .grafica {
+                max-height: none;
+            }
+        }
+    }
+}

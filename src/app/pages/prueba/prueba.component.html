@@ -1,0 +1,60 @@
+<app-header title="Task"></app-header>
+<section class="ctn-prueba">
+  <div class="container">
+    <!-- En invision no era icono es un "+" con texto -->
+    <nav class="create">
+      <p>CREATE +
+      </p>
+    </nav>
+
+    <app-tabs [tabs]="tabs"></app-tabs>
+
+    <nav class="upcoming">
+      <p>Upcoming Task
+        <span class="cinco">5</span>
+      </p>
+    </nav>
+
+    <!-- Esta sección tiene scroll oculto, se puede revisar con el touchpad o si se simula un dispositivo mobile con el touch -->
+    <app-info-square [squares]="squares"></app-info-square>
+
+    <section class="statistics">
+      <div class="ctn-statistics">
+        <p>Statistics</p>
+      </div>
+      <div class="ctn-statistics">
+        <div class="rectangle">
+          <div class="ctn">
+            <div class="download" [ngStyle]="{'background-image': 'url(' + img2 + ')'}"></div>
+          </div>
+          
+          <div class="ctn">
+            <div class="down" [ngStyle]="{'background-image': 'url(' + img1 + ')'}"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <app-statistic [statistics]="statistics"></app-statistic>
+
+    <section class="grafica">
+      <section class="opciones">
+        <div class="opcion" *ngFor="let o of opciones" [class.active]="o.active">
+          <p>{{ o.title }}</p>
+        </div>
+      </section>
+
+      <section class="price">
+        <p><span>$</span> 13,543</p>
+      </section>
+      
+      <canvas id="myChart"></canvas>
+
+      <section class="months">
+        <div class="month" *ngFor="let m of months">
+          <p>{{ m.title }}</p>
+        </div>
+      </section>
+    </section>
+  </div>
+</section>

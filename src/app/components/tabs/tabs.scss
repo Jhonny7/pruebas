@@ -1,0 +1,29 @@
+.tabs {
+  display: inline-flex;
+  width: 100%;
+  margin-top: 24px;
+  .nav-item {
+    text-align: left;
+    .nav-link {
+      //height: 25px;
+      min-width: 77px;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: 0;
+      line-height: 26px;
+      text-align: center;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .activ {
+      transition: 500ms;
+      text-decoration: underline;
+      color: #ffbe00;
+    }
+
+    
+
+  }
+}

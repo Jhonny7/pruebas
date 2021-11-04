@@ -1,0 +1,12 @@
+<section class="statistics">
+  <div class="statistic" *ngFor="let statistic of statistics">
+    <div class="icon-statistic">
+      <div class="icon-svg" [ngStyle]="{'background-image': 'url(' + statistic.icon + ')'}"></div>
+    </div>
+
+    <div class="info-statistic">
+      <p class="total">{{ statistic.total }}</p>
+      <p class="description">{{ statistic.description }}</p>
+    </div>
+  </div>
+</section>

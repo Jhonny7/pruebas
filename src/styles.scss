@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Avenir";
+    src: url("./assets/fonts/avenir.ttf");
+}
+
+body {
+    background-color: #040b11;
+    font-family: "Avenir";
+}
+
+.container {
+    padding-right: 29px;
+    padding-left: 29px;
+}

@@ -1,0 +1,21 @@
+<section class="squares">
+  <div class="square" *ngFor="let card of squares">
+    <p class="title">{{card.title}}</p>
+    <p class="name">{{card.name}}</p>
+
+    <!-- clase progress con doble "ss" es usada por bootstrap -->
+    <div class="progresss">
+      <section class="information">
+        <p>Progress</p>
+        <p>{{card.progress}}%</p>
+      </section>
+      <div class="bar">
+        <div class="avance" [style.width]="card.progress + '%'"></div>
+      </div>
+    </div>
+
+    <section class="days">
+      <p>{{card.days}} day left</p>
+    </section>
+  </div>
+</section>

@@ -1,0 +1,49 @@
+.header-prueba {
+  padding-right: 31px;
+  padding-left: 31px;
+  height: 24px;
+  min-width: 313px;
+  margin-top: 78px;
+
+  .title {
+    height: 25px;
+    min-width: 51px;
+    color: #ffffff;
+    font-family: "Avenir";
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 26px;
+    margin: 0; //quitar margin a parrafo
+    text-align: center;
+  }
+}
+
+.back {
+  //background-color: #fff;
+  /* -webkit-mask-image: url(./../../../assets/icons/back.svg);
+  mask-image: url(./../../../assets/icons/back.svg); */
+
+ /*  background-image: url(./../../../assets/icons/back.svg);
+  background-image: url(./../../../assets/icons/back.svg);
+ */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  height: 100%;
+}
+
+.notificacion {
+  /* background-image: url(../../../assets/icons/back.svg);
+  background-image: url(assets/icons/notificacion.svg);
+ */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  height: 100%;
+}
+
+.col-4 {
+  padding-left: 0;
+  padding-right: 0;
+}
